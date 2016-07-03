@@ -18,9 +18,9 @@ häja stämmningen på din fest eller event.
 Boka oss
 --------
 
-För att boka os kontaktar du vår ordförande eller Disponent, Holger "Ässet"
-Lindström på [disponent@alliancen.se](mailto:disponent@alliancen.se) eller
-[0700123456](tel:0700123456).
+För att boka oss kontaktar du vår ordförande eller Disponent, Holger "Ässet"
+Lindström på [disponent@alliancen.se](disponent@alliancen.se) eller
+[0700123456](0700123456).
 
 
 Sök orchestret
@@ -38,9 +38,9 @@ Emil Oförvägen 1A
 
 ### Bokning eller frågor:
 Disponent Holger "Ässet" Lindström 
-[0700123456](tel:0700123456)
-[disponent@alliancen.se](mailto:disponent@alliancen.se)
+[0700123456](0700123456)
+[disponent@alliancen.se](disponent@alliancen.se)
 
 ### Hemsida
  Oansvarig utgivare: Bernad
- Klagomål sickast till [pipen@alliancen.se](mailto:pipen@alliancen.se)
+ Klagomål sickast till [pipen@alliancen.se](pipen@alliancen.se)

@@ -1,0 +1,141 @@
+/* CSS for internt.alliancen.se */
+
+@font-face {
+    font-family: 'English Towne';
+    src: url('fonts/englishtowne-webfont.woff') format('woff'),
+         url('fonts/englishtowne-webfont.ttf') format('truetype'),
+         url('fonts/englishtowne-webfont.svg#EnglishTowneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400i&subset=latin-ext';
+
+html {
+  --main-color: rgb(119,38,191);
+  --main-accent: rgb(253,191,45);
+  --main-light: rgb(245,245,245);
+  color: var(--main-accent);
+  background-color: var(--main-color);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'English Towne', serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+nav > a {
+  font-family: 'English Towne', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--main-accent);
+}
+
+
+.settings {
+  font-size: 1rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.active {
+  text-decoration: none;
+  /* font-size: 3.5em; */
+}
+
+a:visited {
+  color: var(--main-accent);
+}
+
+nav {
+  /* flex-grow: 2; */
+  /* width: 17vw; */
+  margin: 0 1rem;
+  /* height: 100%; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+main {
+  margin-top: 15vh;
+  padding: 1rem;
+  /* flex-grow: 3; */
+  /* flex-shrink: 0; */
+}
+
+nav > a {
+  display: block;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+section {
+  margin: 0 1rem 2rem 1rem;
+}
+
+section.response {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 0;
+}
+
+article {
+  flex-grow: 3;
+}
+
+article {
+  margin-top: 20vh;
+  padding: 0 1rem;
+}
+
+.response::before {
+  content: "✓";
+  font-size: 2rem;
+  padding: 0 .3rem;
+}
+
+form > div {
+   margin: .5rem 0;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+
+input[type=input] {
+
+  flex-grow: 2;
+}
+
+label {
+  padding-right: 2rem;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  border-radius: 3px;
+  border-style: none;
+  background: var(--main-accent);
+  /* color: var(--main-light); */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px 1px;
+}
+
+label > span {
+  font-size: 0.75rem;
+  margin: 0 .5rem;
+}
+
+input[type="file"] {/* border-style: none; *//* background-color: blueviolet; */text-indent: 0px;
