@@ -1,4 +1,6 @@
-/* CSS for internt.alliancen.se */
+/* CSS for alliancen.se */
+
+/* ********** Definitions ********** */
 
 @font-face {
     font-family: 'English Towne';
@@ -11,19 +13,104 @@
 
 @import 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400i&subset=latin-ext';
 
+
 html {
-  --main-color: rgb(119,38,191);
-  --main-accent: rgb(253,191,45);
-  --main-light: rgb(245,245,245);
-  color: var(--main-accent);
-  background-color: var(--main-color);
-  font-family: 'Fira Sans', sans-serif;
+  --color: rgb(119,38,191);
+  --accent: rgb(253,191,45);
+  --light: rgb(249,249,249);
+  --dark: rgb(5,5,5);
+  --link: var(--color);
+}
+
+/* ********** Media ********** */
+@media (min-width: 600px) {
+  footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer div {
+    width: initial;
+  }
+
+  footer p {
+    width: initial;
+  }
+
+  nav {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  p {
+    width: 35em;
+  }
+
+
+  article p {
+    margin-left:  auto;
+    margin-right: auto;
+  }
+
+  article h2 {
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+/* ********** Basic ********** */
+html {
+  color: var(--dark);
+  background-color: var(   --light);
+  font-family:
+  'Fira Sans', sans-serif;
   font-size: 1em;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: var(--link);
+}
+a:visited {
+  color: var(--accent);
+}
+
+/* ********** Nav ********** */
+nav {
+  padding: .3rem 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color);
+}
+
+nav > a {
+  /* font-size: 3rem; */
+  font-weight: 300;
+  color: var(--accent);
+  /* display: flex; */
+  /* padding: 1rem; */
+  /* flex-direction: row; */
+}
+
+.active {
+  text-decoration: none;
+}
+
+/* ********** Headers ********** */
 h1, h2, h3, h4 {
   font-family: 'English Towne', serif;
   font-weight: 500;
+  /* color: var(--accent); */
+  margin: 2rem 1rem 0 1rem;
 }
 
 h1 {
@@ -31,111 +118,78 @@ h1 {
   margin-top: 1rem;
 }
 
-nav > a {
-  font-family: 'English Towne', serif;
-  font-size: 3rem;
-  font-weight: 500;
-  color: var(--main-accent);
-}
-
-
-.settings {
-  font-size: 1rem;
-  font-family: 'Fira Sans', sans-serif;
-}
-
-.active {
-  text-decoration: none;
-  /* font-size: 3.5em; */
-}
-
-a:visited {
-  color: var(--main-accent);
-}
-
-nav {
-  /* flex-grow: 2; */
-  /* width: 17vw; */
-  margin: 0 1rem;
-  /* height: 100%; */
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-main {
-  margin-top: 15vh;
-  padding: 1rem;
-  /* flex-grow: 3; */
-  /* flex-shrink: 0; */
-}
-
-nav > a {
-  display: block;
-  padding: 1rem;
-}
-
 h2 {
   font-size: 2rem;
 }
 
-section {
-  margin: 0 1rem 2rem 1rem;
+h2 + p {
+  margin-top: 0rem;
 }
 
-section.response {
-  display: flex;
-  justify-content: space-around;
-  flex-grow: 0;
+h3 + p {
+  margin-top: 0rem;
 }
 
-article {
-  flex-grow: 3;
+/* ********** Content ********** */
+p {
+  margin: 1rem 0 1rem 0;
+  padding: 0rem 1rem .5rem 1rem;
+  text-align: justify;
+  /* text-indent: -2px; */
 }
 
-article {
-  margin-top: 20vh;
-  padding: 0 1rem;
+section p:first-letter {font-family: "English towne";font-size: 4rem;float: left;line-height: .7em;margin: 0 0.1em 0 0;}
+
+
+
+/* ********** Footer ********** */
+footer {
+  background-color: var(--color);
+  color: var(--accent);
+  /* font-size: 0.8rem; */
 }
 
-.response::before {
-  content: "✓";
-  font-size: 2rem;
-  padding: 0 .3rem;
+footer > h1 {
+  text-align: center;
+  width: 100%;
+  /* display: block; */
 }
 
-form > div {
-   margin: .5rem 0;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+footer > h2, h3 {
+  font-family: "Fira sans";
+  font-weight: 600;
 }
 
-
-input[type=input] {
-
-  flex-grow: 2;
+footer p {
+  text-align: left;
 }
 
-label {
-  padding-right: 2rem;
+footer a {
+  color: var(--accent);
+}
+.adress {
+  font-family: "Fira mono";
 }
 
-input[type="submit"] {
-  margin-top: 1rem;
-  border-radius: 3px;
-  border-style: none;
-  background: var(--main-accent);
-  /* color: var(--main-light); */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px 1px;
+#kontakt {
+  display: none;
 }
 
-label > span {
-  font-size: 0.75rem;
-  margin: 0 .5rem;
+img {
+  width: 100%;
+  display: block;
 }
 
-input[type="file"] {/* border-style: none; *//* background-color: blueviolet; */text-indent: 0px;
+.logo {
+  height: 30vh;
+  width: initial;
+  margin: 1em auto;
+  display: block;
+}
+
+header > h1 {
+  display: none;
+}
+
+header {
+  background-color: var(--color);
