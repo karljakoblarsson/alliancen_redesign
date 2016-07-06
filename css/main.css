@@ -321,6 +321,10 @@ header {
     margin-bottom: 1rem;
   }
 
+  img {
+    width: initial;
+  }
+  
   section > img {
     max-width: 30ch;
   }
@@ -331,6 +335,7 @@ header {
 
   img {
     max-width: 65ch;
+    height: initial;
     margin: 0 auto;
   }
 
@@ -354,6 +359,7 @@ header {
 
   main > img {
     margin: 2rem 0 1.5rem 0;
+    flex: 0 0;
   }
 
   .description p:first-letter {
