@@ -55,7 +55,7 @@ nav {
 }
 
 nav > a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
   color: var(--accent);
   /* display: flex; */
@@ -83,6 +83,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-top: 2.2rem;
+  /* margin-bottom: -.5rem; */
 }
 
 h2 + p {
@@ -95,7 +97,7 @@ h3 + p {
 
 /* ********** Content ********** */
 p {
-  margin: 1rem 0 1rem 0;
+  margin: 1.5rem 0 1.5rem 0;
   padding: 0rem 1rem .5rem 1rem;
   text-align: justify;
   /* text-indent: -2px; */
@@ -120,14 +122,14 @@ footer {
 
 footer > h1 {
   text-align: center;
-  /* width: 100%; */
-  /* display: block; */
-  /* font-size: 2.5rem; */
+  /* fix for vertical rythm */
+  margin-bottom: -1.1rem;
 }
 
 footer > h2, h3 {
   font-family: "Fira sans";
   font-weight: 600;
+  /* margin-bottom: -1.4rem; */
 }
 
 footer p {
@@ -190,6 +192,8 @@ header {
   footer div {
     width: initial;
     flex-grow:;
+    /* border-bottom: black solid 9px; */
+    line-height: 1.5rem;
   }
 
   footer p {
@@ -199,6 +203,9 @@ header {
   nav {
     font-size: 2rem;
     margin: 1rem;
+  }
+  nav > a {
+    font-size: 1.5rem;
   }
 
   p {
@@ -223,14 +230,12 @@ header {
   .action p {
     margin-left: 0;
     margin-right: 0;
+    margin-top: .25rem;
   }
 }
 
 
-@media (min-width: 1000px) {
-  html {
-    font-size: 1.2em;
-  }
+@media (min-width: 900px) {
 
   header img {
     display: none;
@@ -242,7 +247,7 @@ header {
     /* border: black none; */
     border-radius: 50px  50px 0 0;
     /* flex-grow: 4; */
-    max-height: 20vh;
+    max-height: 15vh;
     margin: 0;
   }
 
@@ -251,7 +256,7 @@ header {
     background-size: cover;
     height: 50vw;
     max-height: 70vh;
-    background-position: center 85%;
+    background-position: center 90%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -278,7 +283,7 @@ header {
     /* flex-grow: 8; */
     font-size: 1rem;
     margin: 0;
-    padding-top: 1.32rem;
+    padding-top: 1.2rem;
   }
 
   nav a {
@@ -297,7 +302,7 @@ header {
 
   .description {
     flex-direction: column;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     /* flex-shrink: 0; */
     /* flex-grow: 0; */
   }
@@ -348,11 +353,21 @@ header {
   }
 
   main > img {
-    margin: 3rem 0;
+    margin: 2rem 0 1.5rem 0;
   }
 
   .description p:first-letter {
     line-height: .69em;
   }
 
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.2em;
+  }
+
+  header .logo {
+    max-height: 20vh;
+  }
 }
