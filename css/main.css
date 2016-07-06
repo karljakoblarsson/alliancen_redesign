@@ -29,6 +29,7 @@ html {
   font-family:
   'Fira Sans', sans-serif;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 body {
@@ -54,7 +55,7 @@ nav {
 }
 
 nav > a {
-  /* font-size: 3rem; */
+  font-size: 1.25rem;
   font-weight: 300;
   color: var(--accent);
   /* display: flex; */
@@ -77,7 +78,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 h2 {
@@ -85,7 +86,7 @@ h2 {
 }
 
 h2 + p {
-  margin-top: 0rem;
+  margin-top: 0.5em;
 }
 
 h3 + p {
@@ -104,7 +105,7 @@ p {
   font-family: "English towne";
   font-size: 4rem;
   float: left;
-  line-height: .7em;
+  line-height: 0.7em;
   margin: 0 0.1em 0 0;
 }
 
@@ -114,12 +115,14 @@ footer {
   background-color: var(--color);
   color: var(--accent);
   /* font-size: 0.8rem; */
+  line-height: 1rem;
 }
 
 footer > h1 {
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   /* display: block; */
+  /* font-size: 2.5rem; */
 }
 
 footer > h2, h3 {
@@ -173,6 +176,7 @@ header {
 
   footer div {
     width: initial;
+    flex-grow:;
   }
 
   footer p {
@@ -185,26 +189,34 @@ header {
   }
 
   p {
-    width: 35em;
+    max-width: 50ch;
   }
 
 
   article p {
     margin-left:  auto;
     margin-right: auto;
+    /* margin: 1.5rem auto; */
   }
 
-  article h2 {
-    width: 35rem;
+  article.action {
+    /* width: initial; */
     margin-left: auto;
     margin-right: auto;
+    /* display: block; */
+    max-width: 50ch;
+  }
+
+  .action p {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 
 @media (min-width: 1000px) {
   html {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   header img {
@@ -224,8 +236,8 @@ header {
   header {
     background-image: url(../images/21.png);
     background-size: cover;
-    min-height: 48vw;
-    /* max-height: 50%; */
+    height: 50vw;
+    max-height: 50vh;
     background-position: bottom;
     display: flex;
     justify-content: center;
@@ -266,10 +278,15 @@ header {
     align-items: center;
     /* max-width: 45rem; */
     justify-content: space-around;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .description {
     flex-direction: column;
+    margin: 1rem 0;
+    /* flex-shrink: 0; */
+    /* flex-grow: 0; */
   }
 
   article > section{
@@ -279,13 +296,15 @@ header {
 
   .description > section {
     display: flex;
-    max-width: 45rem;
+    /* max-width: 45rem; */
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 
   section > img {
-    max-width: 30%;
+    max-width: 30ch;
   }
   
   footer {
@@ -293,8 +312,30 @@ header {
   }
 
   img {
-    max-width: 40rem;
+    max-width: 65ch;
     margin: 0 auto;
+  }
+
+  main {
+   display: flex;
+   width: 100ch;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   justify-content: center;
+  }
+  
+  article > img {
+    margin: 1rem 0;
+  }
+
+  article.action {
+    display: block;
+    max-width: 40ch;
+    margin: 0 auto;
+  }
+
+  main > img {
+    margin: 3rem 0;
   }
 
   .description p:first-letter {
