@@ -82,9 +82,20 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 2.2rem;
+  margin-bottom: 1rem;
   /* margin-bottom: -.5rem; */
+  /* margin: 2.2rem auto 1rem auto; */
+  /* margin: 0 auto; */
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 + p {
@@ -117,19 +128,19 @@ footer {
   background-color: var(--color);
   color: var(--accent);
   /* font-size: 0.8rem; */
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 footer > h1 {
   text-align: center;
-  /* fix for vertical rythm */
-  margin-bottom: -1.1rem;
+  /* fix for vertical rythm but it's broken now */
+  /* margin-bottom: -1.1rem; */
 }
 
-footer > h2, h3 {
+footer > h3, footer h4 {
   font-family: "Fira sans";
   font-weight: 600;
-  /* margin-bottom: -1.4rem; */
+  margin-bottom: -1.4rem;
 }
 
 footer p {
@@ -159,7 +170,7 @@ img {
   display: block;
 }
 
-header > h1 {
+header h1 {
   display: none;
 }
 
@@ -169,7 +180,7 @@ header {
 
 /* ********** Media ********** */
 
-/* Är det här nädvändigt? */
+/* Ã„r det hÃ¤r nÃ¤dvÃ¤ndigt? */
 @media (max-width: 359px) {
   h1 {
     font-size: 2.5rem;
@@ -193,7 +204,6 @@ header {
     width: initial;
     flex-grow:;
     /* border-bottom: black solid 9px; */
-    line-height: 1.5rem;
   }
 
   footer p {
@@ -232,6 +242,8 @@ header {
     margin-right: 0;
     margin-top: .25rem;
   }
+
+
 }
 
 
@@ -335,7 +347,8 @@ header {
 
   img {
     max-width: 65ch;
-    height: initial;
+    height: auto;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -359,7 +372,8 @@ header {
 
   main > img {
     margin: 2rem 0 1.5rem 0;
-    flex: 0 0;
+    flex: 0 0 auto;
+    align-self: center;
   }
 
   .description p:first-letter {
