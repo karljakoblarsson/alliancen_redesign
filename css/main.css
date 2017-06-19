@@ -15,7 +15,7 @@
 
 
 html {
-  --color: rgb(119,38,191);
+  --color: rgb(116,54,140);
   --accent: rgb(253,191,45);
   --light: rgb(249,249,249);
   --dark: rgb(5,5,5);
@@ -72,7 +72,6 @@ nav > a {
 h1, h2, h3, h4 {
   font-family: 'English Towne', serif;
   font-weight: 500;
-  /* color: var(--accent); */
   margin: 2rem 1rem 0 1rem;
 }
 
@@ -85,9 +84,6 @@ h2 {
   font-size: 3rem;
   margin-top: 2.2rem;
   margin-bottom: 1rem;
-  /* margin-bottom: -.5rem; */
-  /* margin: 2.2rem auto 1rem auto; */
-  /* margin: 0 auto; */
   text-align: center;
   width: 100%;
 }
@@ -161,6 +157,7 @@ footer a {
 img {
   width: 100%;
   display: block;
+  box-shadow: rgba(103,103,103,0.38) 0 0 6px 0;
 }
 
 .logo {
@@ -168,6 +165,11 @@ img {
   width: initial;
   margin: 1em auto;
   display: block;
+  box-shadow: none;
+}
+
+header, footer {
+  box-shadow: var(--color) 0px 0px 6px 0px;
 }
 
 header h1 {
@@ -272,25 +274,15 @@ header {
     align-items: flex-end;
   }
 
-  header::before {
+  header::before, header::after {
     content: "";
     display: block;
-    height: 3rem;
-    flex-grow: 3;
-    background: var(--color);
-    /* margin: 0; */
-  }
-
-  header::after {
-    content: "";
-    display: block;
-    height: 3rem;
+    height: 3.5rem;
     flex-grow: 3;
     background: var(--color);
   }
 
   nav {
-    /* flex-grow: 8; */
     font-size: 1rem;
     margin: 0;
     padding-top: 1.2rem;
@@ -304,7 +296,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* max-width: 45rem; */
     justify-content: space-around;
     flex-grow: 0;
     flex-shrink: 0;
@@ -313,17 +304,13 @@ header {
   .description, .bodytext {
     flex-direction: column;
     margin: 1.5rem 0;
-    /* flex-shrink: 0; */
-    /* flex-grow: 0; */
   }
 
   article > section {
-    /* flex-shrink: 3; */
   }
 
   .description > section {
     display: flex;
-    /* max-width: 45rem; */
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
