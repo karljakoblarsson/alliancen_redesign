@@ -264,11 +264,11 @@ header {
   }
 
   header {
-    background-image: url(../images/vada.jpg);
+    background-image: url(../images/gsof-baloo.jpg);
     background-size: cover;
     height: 50vw;
     max-height: 70vh;
-    background-position: center 90%;
+    background-position: center 45%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
